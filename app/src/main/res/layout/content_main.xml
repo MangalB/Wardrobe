@@ -8,7 +8,7 @@
     <TextView
         android:id="@+id/tv_top_empty_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:gravity="center"
         android:text="@string/choose_image_to_start"
         android:textSize="18sp"
@@ -22,7 +22,7 @@
     <TextView
         android:id="@+id/tv_bottom_empty_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:textSize="18sp"
         android:gravity="center"
         android:text="@string/choose_image_to_start"

@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
 
         clothVModel.getClothes(true).observe(this) {
             if (it.isNotEmpty()) {
-                tv_top_empty_view.visibility = View.GONE
+                tv_top_empty_view.visibility = View.INVISIBLE
                 clothTopVPAdapter.updateData(ArrayList<BaseClothInterface>(it))
                 vp_top.setCurrentItem(it.size - 1, false)
             }
@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
 
         clothVModel.getClothes(false).observe(this) {
             if (it.isNotEmpty()) {
-                tv_bottom_empty_view.visibility = View.GONE
+                tv_bottom_empty_view.visibility = View.INVISIBLE
                 clothBottomVPAdapter.updateData(ArrayList<BaseClothInterface>(it))
                 vp_bottom.setCurrentItem(it.size - 1, false)
             }
